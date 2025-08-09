@@ -1,0 +1,26 @@
+{
+  "name": "nodejsbasic-2",
+  "version": "1.0.0",
+  "description": "nodejs for beginner",
+  "license": "ISC",
+  "author": "BoyDev",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon ./bin/www",
+    "build:css": "npx tailwindcss -i ./public/css/tailwind.css -o ./public/css/tailwind.output.css --watch"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "mongoose": "^6.13.8",
+    "multer": "^2.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "tailwindcss": "^3.4.17"
+  }
+}
