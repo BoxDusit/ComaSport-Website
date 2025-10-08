@@ -32,6 +32,16 @@ router.get('/login', (req, res) => {
     res.render('login', { error: null });
 });
 
+router.get('/register', (req, res) => {
+    res.render('register', { error: null });
+});
+
+router.post('/register', (req, res) => {
+    // TODO: Add registration logic here
+    // This is a placeholder that just redirects to login
+    res.redirect('/login');
+});
+
 router.post('/login', (req, res) => {
     const email = req.body.email;
     const password = req.body.password;

@@ -9,40 +9,14 @@
 </head>
 
 <body class="relative min-h-screen">
-    <!-- Slideshow background -->
-    <div id="gallery" class="absolute inset-0 w-full h-full z-0" data-carousel="slide">
-        <div class="relative h-full overflow-hidden rounded-lg md:h-screen">
-
-            <!-- Item 2 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-                <img src="https://static.nike.com/a/images/f_auto/dpr_3.0,cs_srgb/w_363,c_limit/578c6c76-e35c-41d9-80d8-9f2b11f3210f/6-outfit-ideas-for-socks-with-sandals.jpg"
-                    class="absolute block w-full h-full object-cover" alt="">
-            </div>
-            <!-- Item 3 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
-                    class="absolute block w-full h-full object-cover" alt="">
-            </div>
-            <!-- Item 4 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
-                    class="absolute block w-full h-full object-cover" alt="">
-            </div>
-            <!-- Item 5 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
-                    class="absolute block w-full h-full object-cover" alt="">
-            </div>
-        </div>
-    </div>
-
+    
     <!-- Form on top of slideshow -->
-    <div class="relative z-10 mx-5 sm:mx-10 md:mx-20 lg:mx-60 xl:mx-110">
-        <div class="flex flex-col items-center justify-center px-4 py-6 sm:px-8 sm:py-10 md:h-screen lg:py-0">
-            <a href="/" class="flex items-center mb-6 text-2xl font-semibold text-gray-900">
-                <img class="w-50 h-20 mr-2" src="https://f.ptcdn.info/307/024/000/1412864811-pumacoma-o.jpg" alt="logo">
+    <div class="relative z-10 mx-auto max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col items-center justify-center min-h-screen py-8 sm:py-12">
+            <a href="/" class="flex items-center mb-8 text-2xl font-semibold text-gray-900">
+                <img class="h-16 sm:h-20 w-auto" src="https://f.ptcdn.info/307/024/000/1412864811-pumacoma-o.jpg" alt="logo">
             </a>
-            <div class="w-full bg-white rounded-lg shadow-lg">
+            <div class="w-full bg-white rounded-xl shadow-xl">
                 <div class="p-6 sm:p-8 md:p-10 space-y-4 sm:space-y-6 md:space-y-8">
                     <h1 class="text-lg sm:text-xl md:text-2xl font-bold leading-tight tracking-tight text-gray-900">
                         Sign in to your account
@@ -60,24 +34,24 @@
                                 class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:border-black block w-full p-2 sm:p-2.5"
                                 required>
                         </div>
-                        <div class="flex  justify-between">
-                            <div class="flex items-start mb-4 sm:mb-0">
+                        <div class="flex justify-between">
+                            <div class="flex items-start">
                                 <div class="flex items-center h-5">
                                     <input id="remember" aria-describedby="remember" type="checkbox"
-                                        class="w-4 h-4 border border-gray-300 rounded bg-gray-500 focus:border-black ">
+                                        class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-black">
                                 </div>
                                 <div class="ml-3 text-sm">
                                     <label for="remember" class="text-gray-500">Remember me</label>
                                 </div>
                             </div>
-                            <a href="#" class="text-sm font-medium text-gray-500 hover:underline">Forgot password</a>
+                            <a href="#" class="text-sm font-medium text-gray-500 hover:underline">Forget password</a>
                         </div>
                         <button type="submit"
                             class="w-full text-white  bg-black focus:ring-4 focus:outline-none  font-medium rounded-lg text-sm px-5 py-2.5 text-center">Sign
                             in</button>
 
                         <p class="text-sm font-light text-gray-500">
-                            Don’t have an account yet? <a href="#"
+                            Don’t have an account yet? <a href="/register"
                                 class="font-medium text-primary-600 hover:underline">Sign up</a>
                         </p>
                         <% if (error) { %>
