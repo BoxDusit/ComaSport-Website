@@ -1,5 +1,3 @@
-# ComaSport‑Website
-
 เว็บไซต์ของโปรเจกต์ **ComaSport** — frontend + backend (Node.js / Express / EJS)  
 
 ## 💡 โครงสร้างโปรเจกต์
